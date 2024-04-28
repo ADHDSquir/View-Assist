@@ -1,12 +1,12 @@
 blueprint:
-  name: View Assist - How's the weather
-  description: Ask How's the weather and receive a response with temperature and condition
+  name: View Assist - Hows the weather
+  description: Ask Hows the weather and receive a response with temperature and condition
   domain: automation
   input:
   	command:
       name: Command
       description: The question or command being sent to Assist
-      default: "How's the weather"
+      default: "Hows the weather"
 	response:
       name: Response
       description: How Assist should reply to the Command

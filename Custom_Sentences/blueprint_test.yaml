@@ -3,7 +3,7 @@ blueprint:
   description: Ask How's the weather and receive a response with temperature and condition
   domain: automation
   input:
-    command:
+		command:
       name: Command
       description: The question or command being sent to Assist
       default: "How's the weather"

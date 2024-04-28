@@ -15,18 +15,18 @@ blueprint:
       name: View
       description: The path to the dashboard and view to display for View Assist satellites
       default: "/dashboard-viewassist/weather"
-  trigger:
-    - platform: conversation
-      command: !input command
-  action:
-    - set_conversation_response: !input response
-    - variables:
-        target_display_device: "{{states('input_text.assist_target_display_device')}}"
-        target_satellite_device: "{{states('input_text.assist_target_satellite_device')}}"
-        target_mediaplayer_device: "{{states('input_text.assist_target_mediaplayer_device')}}"
-    - service: browser_mod.navigate
-      data:
-        path: !input view
-      target:
-        device_id: "{{ target_display_device }}"
-  mode: single
+trigger:
+  - platform: conversation
+    command: !input command
+action:
+  - set_conversation_response: !input response
+  - variables:
+      target_display_device: "{{states('input_text.assist_target_display_device')}}"
+      target_satellite_device: "{{states('input_text.assist_target_satellite_device')}}"
+      target_mediaplayer_device: "{{states('input_text.assist_target_mediaplayer_device')}}"
+  - service: browser_mod.navigate
+    data:
+      path: !input view
+    target:
+      device_id: "{{ target_display_device }}"
+mode: single

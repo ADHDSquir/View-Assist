@@ -7,7 +7,7 @@ blueprint:
       name: Command
       description: The question or command being sent to Assist
       default: "How's the weather"
-	response:
+		response:
       name: Response
       description: How Assist should reply to the Command
       default: "Its {{ state_attr('weather.home', 'temperature') }} degrees and {{states.weather.home.state}}"

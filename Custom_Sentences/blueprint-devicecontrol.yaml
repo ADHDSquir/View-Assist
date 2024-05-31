@@ -42,7 +42,8 @@ trigger:
     to: cycle
 variables:
   satellite: !input satellite
-  
+  dashboard: !input dashboard
+  display: !input display
 action:
   - choose:
       - conditions:
@@ -72,7 +73,7 @@ action:
                 data:
                   path: "{{dashboard}}/clock"
                 target:
-                  device_id: "{{device_id(states[satellite].attributes.display_device)}}"
+                  device_id: "{{device_id(display)}}"
           - if:
               - condition: state
                 entity_id: !input satellite
@@ -84,7 +85,7 @@ action:
                 data:
                   path: "{{dashboard}}/music"
                 target:
-                  device_id: "{{device_id(states[satellite].attributes.display_device)}}"
+                  device_id: "{{device_id(display)}}"
       - conditions:
           - condition: trigger
             id:
@@ -111,7 +112,7 @@ action:
                             data:
                               path: "{{dashboard}}/{{repeat.item}}"
                             target:
-                              device_id: "{{device_id(states[satellite].attributes.display_device)}}"
+                              device_id: "{{device_id(display)}}"
                       - if:
                           - condition: state
                             entity_id: !input satellite

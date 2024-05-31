@@ -40,6 +40,9 @@ trigger:
     id: Cycle
     attribute: mode
     to: cycle
+variables:
+  satellite: !input satellite
+  
 action:
   - choose:
       - conditions:

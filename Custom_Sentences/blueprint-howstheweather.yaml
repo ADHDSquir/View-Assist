@@ -6,7 +6,7 @@ blueprint:
     dashboard:
       name: Dashboard Weather view
       description: The View Assist dashboard view to use for weather
-      default: "/dashboard-viewassist/weather"
+      default: "dashboard-viewassist/weather"
     group_entity: 
       name: Group Entity
       description: The group entity that holds the list of ViewAssist 
@@ -37,6 +37,7 @@ trigger:
 variables:
   group_entity: !input group_entity
   weather_entity: !input weather_entity
+  dashboard: !input dashboard
 condition: []
 action:
   - variables:
@@ -59,7 +60,7 @@ action:
     then:
       - service: browser_mod.navigate
         data:
-          path: !input dashboard
+          path: "{{ dashboard }}"
         target:
           device_id: "{{ target_display_device }}"
     enabled: true

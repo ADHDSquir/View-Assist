@@ -14,7 +14,7 @@ blueprint:
         entity:
           filter:
             - domain: group
-      default: "group.assist_satellites"
+      default: "group.viewassist_satellites"
     weather_entity: 
       name: Weather Entity
       description: The entity that provides weather information.

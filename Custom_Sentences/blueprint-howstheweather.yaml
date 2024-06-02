@@ -42,7 +42,7 @@ condition: []
 action:
   - variables:
       target_satellite_device: |-
-        {% for sat in expand('group_entity') %}
+        {% for sat in expand(group_entity) %}
           {% if device_id(sat.attributes.mic_device)  == trigger.device_id %}
             {{ sat.entity_id }}
           {% endif %}

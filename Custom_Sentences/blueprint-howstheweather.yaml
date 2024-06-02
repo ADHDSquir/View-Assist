@@ -52,7 +52,7 @@ action:
     enabled: true
   - set_conversation_response: >-
       Its {{ state_attr(weather_entity, 'temperature') }} degrees and
-      {{states.weather_entity.state}}
+      {{states[weather_entity].state}}
     enabled: true
   - if:
       - condition: template

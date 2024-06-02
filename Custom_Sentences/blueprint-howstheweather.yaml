@@ -6,7 +6,7 @@ blueprint:
     dashboard:
       name: Dashboard Weather view
       description: The View Assist dashboard view to use for weather
-      default: "dashboard-viewassist/weather"
+      default: "/dashboard-viewassist/weather"
     group_entity: 
       name: Group Entity
       description: The group entity that holds the list of ViewAssist 

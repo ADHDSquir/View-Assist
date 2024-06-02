@@ -50,7 +50,7 @@ action:
       target_mediaplayer_device: "{{ state_attr(target_satellite_device, 'mediaplayer_device') }}"
     enabled: true
   - set_conversation_response: >-
-      Its {{ state_attr('weather_entity', 'temperature') }} degrees and
+      Its {{ state_attr(weather_entity, 'temperature') }} degrees and
       {{states.weather_entity.state}}
     enabled: true
   - if:

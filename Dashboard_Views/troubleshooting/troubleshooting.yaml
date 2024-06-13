@@ -27,25 +27,57 @@ custom_fields:
   title: Troubleshooting
   message: >-
     [[[
-
-    return `assist_group: <b
-    style="font-weight:400;">${variables.assist_group}</b><br />
-    default_satellite: <b
-    style="font-weight:400;">${variables.default_satellite}</b><br />
-    var_assistsat_entity: <b
-    style="font-weight:400;">${variables.var_assistsat_entity}</b><br />
-    var_assisting: <b style="font-weight:400;">${variables.var_assisting}</b><br
-    /> var_mic_device: <b
-    style="font-weight:400;">${variables.var_mic_device}</b><br /> var_mic_mute:
-    <b style="font-weight:400;">${variables.var_mic_mute}</b><br />
-    var_mic_switch: <b
-    style="font-weight:400;">${variables.var_mic_switch}</b><br />
-    var_mediaplayer_device: <b
-    style="font-weight:400;">${variables.var_mediaplayer_device}</b><br />
-    var_mediaplayer_mute: <b
-    style="font-weight:400;">${variables.var_mediaplayer_mute}</b><br />
-    var_title: <b style="font-weight:400;">${variables.var_title}</b><br />
-    var_message: <b style="font-weight:400;">${variables.var_message}</b><br />
-    var_image: <b style="font-weight:400;">${variables.var_image}</b><br />
-    var_font_size: <b style="font-weight:400;">${variables.var_font_size}</b><br
-    />` ]]]
+    return `<table style="width:100%;">
+      <tr>
+        <td><b>assist_group</b></td>
+        <td>${variables.assist_group}</td>
+      </tr>
+      <tr>
+        <td><b>default_satellite</b></td>
+        <td>${variables.default_satellite}</td>
+      </tr>
+      <tr>
+        <td><b>var_assistsat_entity</b></td>
+        <td>${variables.var_assistsat_entity}</td>
+      </tr>
+      <tr>
+        <td><b>var_assisting</b></td>
+        <td>${variables.var_assisting}</td>
+      </tr>
+      <tr>
+        <td><b>var_mic_device</b></td>
+        <td>${variables.var_mic_device}</td>
+      </tr>
+      <tr>
+        <td><b>var_mic_mute</b></td>
+        <td>${variables.var_mic_mute}</td>
+      </tr>
+      <tr>
+        <td><b>var_mic_switch</b></td>
+        <td>${variables.var_mic_switch}</td>
+      </tr>
+      <tr>
+        <td><b>var_mediaplayer_device</b></td>
+        <td>${variables.var_mediaplayer_device}</td>
+      </tr>
+      <tr>
+        <td><b>var_mediaplayer_mute</b></td>
+        <td>${variables.var_mediaplayer_mute}</td>
+      </tr>
+      <tr>
+        <td><b>var_title</b></td>
+        <td>${variables.var_title}</td>
+      </tr>
+      <tr>
+        <td><b>var_message</b></td>
+        <td>${variables.var_message}</td>
+      </tr>
+      <tr>
+        <td><b>var_image</b></td>
+        <td>${variables.var_image}</td>
+      </tr>
+      <tr>
+        <td><b>var_font_size</b></td>
+        <td>${variables.var_font_size}</td>
+      </tr>
+    </table>` ]]]

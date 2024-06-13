@@ -33,6 +33,10 @@ custom_fields:
         <td>${variables.assist_group}</td>
       </tr>
       <tr>
+        <td><b>browser_mod-browser-id</b></td>
+        <td>${localStorage.getItem("browser_mod-browser-id")}</td>
+      </tr>
+      <tr>
         <td><b>default_satellite</b></td>
         <td>${variables.default_satellite}</td>
       </tr>

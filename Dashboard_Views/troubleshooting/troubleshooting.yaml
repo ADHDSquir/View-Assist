@@ -25,63 +25,69 @@ styles:
       - padding: '-10%'
 custom_fields:
   title: Troubleshooting
-  message: >-
-    [[[
-    return `<table style="width:100%;">
+  message: |-
+    [[[ return `
+    <style>
+    .va-c1 {
+      padding-right: 15px;
+      font-weight: bold;
+    }
+    </style>
+    <table>
       <tr>
-        <td><b>assist_group</b></td>
+        <td class="va-c1">assist_group</td>
         <td>${variables.assist_group}</td>
       </tr>
       <tr>
-        <td><b>browser_mod-browser-id</b></td>
+        <td class="va-c1">browser_mod-browser-id</td>
         <td>${localStorage.getItem("browser_mod-browser-id")}</td>
       </tr>
       <tr>
-        <td><b>default_satellite</b></td>
+        <td class="va-c1">default_satellite</td>
         <td>${variables.default_satellite}</td>
       </tr>
       <tr>
-        <td><b>var_assistsat_entity</b></td>
+        <td class="va-c1">var_assistsat_entity</td>
         <td>${variables.var_assistsat_entity}</td>
       </tr>
       <tr>
-        <td><b>var_assisting</b></td>
+        <td class="va-c1">var_assisting</td>
         <td>${variables.var_assisting}</td>
       </tr>
       <tr>
-        <td><b>var_mic_device</b></td>
+        <td class="va-c1">var_mic_device</td>
         <td>${variables.var_mic_device}</td>
       </tr>
       <tr>
-        <td><b>var_mic_mute</b></td>
+        <td class="va-c1">var_mic_mute</td>
         <td>${variables.var_mic_mute}</td>
       </tr>
       <tr>
-        <td><b>var_mic_switch</b></td>
+        <td class="va-c1">var_mic_switch</td>
         <td>${variables.var_mic_switch}</td>
       </tr>
       <tr>
-        <td><b>var_mediaplayer_device</b></td>
+        <td class="va-c1">var_mediaplayer_device</td>
         <td>${variables.var_mediaplayer_device}</td>
       </tr>
       <tr>
-        <td><b>var_mediaplayer_mute</b></td>
+        <td class="va-c1">var_mediaplayer_mute</td>
         <td>${variables.var_mediaplayer_mute}</td>
       </tr>
       <tr>
-        <td><b>var_title</b></td>
+        <td class="va-c1">var_title</td>
         <td>${variables.var_title}</td>
       </tr>
       <tr>
-        <td><b>var_message</b></td>
+        <td class="va-c1">var_message</td>
         <td>${variables.var_message}</td>
       </tr>
       <tr>
-        <td><b>var_image</b></td>
+        <td class="va-c1">var_image</td>
         <td>${variables.var_image}</td>
       </tr>
       <tr>
-        <td><b>var_font_size</b></td>
+        <td class="va-c1">var_font_size</td>
         <td>${variables.var_font_size}</td>
       </tr>
     </table>` ]]]
